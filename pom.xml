@@ -39,7 +39,7 @@
   <properties>
     <smpp.component>rpn-calculator</smpp.component>
 
-    <maven.compiler.release>21</maven.compiler.release>
+    <maven.compiler.release>20</maven.compiler.release>
     <antlr4-maven-plugin.version>4.13.0</antlr4-maven-plugin.version>
   </properties>
   <dependencyManagement>
@@ -61,22 +61,6 @@
   <build>
     <pluginManagement>
       <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <configuration>
-            <compilerArgs>
-              <compilerArg>--enable-preview</compilerArg>
-            </compilerArgs>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <configuration>
-            <argLine>--enable-preview</argLine>
-          </configuration>
-        </plugin>
         <plugin>
           <groupId>org.antlr</groupId>
           <artifactId>antlr4-maven-plugin</artifactId>
