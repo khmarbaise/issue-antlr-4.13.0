@@ -17,9 +17,28 @@
 # ANTLR 4.13.0 Issue JDK 21 EA
 
 [![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/apache/maven.svg?label=License)][license]
-[![Main](https://github.com/khmarbaise/rpn-calculator/actions/workflows/main.yaml/badge.svg)](https://github.com/khmarbaise/rpn-calculator/actions/workflows/main.yaml)
-[![Issues](https://img.shields.io/github/issues/khmarbaise/rpn-calculator)](https://github.com/khmarbaise/rpn-calculator/issues)
-[![Issues Closed](https://img.shields.io/github/issues-closed/khmarbaise/rpn-calculator)](https://github.com/khmarbaise/rpn-calculator/issues?q=is%3Aissue+is%3Aclosed)
-[![codecov](https://codecov.io/gh/khmarbaise/rpn-calculator/branch/master/graph/badge.svg?token=RULU3ULC3O)](https://codecov.io/gh/khmarbaise/rpn-calculator)
+[![Main](https://github.com/khmarbaise/issue-antlr-4.13.0/actions/workflows/main.yaml/badge.svg)](https://github.com/khmarbaise/issue-antlr-4.13.0/actions/workflows/main.yaml)[![Issues](https://img.shields.io/github/issues/khmarbaise/rpn-calculator)](https://github.com/khmarbaise/rpn-calculator/issues)
+[![Issues Closed](https://img.shields.io/github/issues-closed/khmarbaise/issue-antlr-4.13.0)](https://github.com/khmarbaise/issue-antlr-4.13.0/issues?q=is%3Aissue+is%3Aclosed)
 
+Example project for compiler WARNING created during build with JDK 21 EA build.
 
+```text
+[INFO] --- compiler:3.11.0:compile (default-compile) @ issue-antlr-4.13.0 ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 21] to target/classes
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[95,50] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[174,70] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[187,67] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[199,69] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[217,76] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[231,68] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[241,68] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[253,75] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[263,66] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[275,72] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[287,75] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprParser.java:[299,72] possible 'this' escape before subclass is fully initialized
+[WARNING] ../issue-antlr-4.13.0/target/generated-sources/antlr4/com/soebes/rpn/grammar/ExprLexer.java:[88,49] possible 'this' escape before subclass is fully initialized
+```
+
+[license]: https://www.apache.org/licenses/LICENSE-2.0
