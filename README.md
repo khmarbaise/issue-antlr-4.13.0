@@ -22,6 +22,8 @@
 
 Example project for compiler WARNING created during build with JDK 21 EA build.
 
+Related to issue: https://github.com/antlr/antlr4/issues/4341
+
 ```text
 [INFO] --- compiler:3.11.0:compile (default-compile) @ issue-antlr-4.13.0 ---
 [INFO] Changes detected - recompiling the module! :source
